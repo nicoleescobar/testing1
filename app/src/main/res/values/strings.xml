@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">testing1</string>
+    <string name="titulo">TÍTULO</string>
+    <string name="resultado">Resultado</string>
+    <string name="primer_numero">Primer Numero</string>
+    <string name="segundo_numero">Segundo Numero</string>
+    <string name="calcular">Calcular</string>
+    <string name="borrar">Borrar</string>
 </resources>
