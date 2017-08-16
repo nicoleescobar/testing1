@@ -1,5 +1,6 @@
 package com.example.android.testing1;
 
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +10,8 @@ import android.widget.TextView;
 public class principal extends AppCompatActivity {
     private TextView res;
     private EditText n1, n2;
+    private Resources resources;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,16 +20,17 @@ public class principal extends AppCompatActivity {
         res = (TextView)findViewById(R.id.lblresultado);
         n1 = (EditText)findViewById(R.id.txtnum1);
         n2 = (EditText)findViewById(R.id.txtnum2);
+        resources = this.getResources();
     }
 
     public boolean validar(){
         if(n1.getText().toString().isEmpty()){
-            n1.setError("Digite el numero 1");
+            n1.setError(resources.getString(R.string.mensaje_error_uno));
             return false;
         }
 
         if(n2.getText().toString().isEmpty()){
-            n2.setError("Digite el numero 2");
+            n2.setError(resources.getString(R.string.mensaje_error_dos));
             return false;
         }
 
