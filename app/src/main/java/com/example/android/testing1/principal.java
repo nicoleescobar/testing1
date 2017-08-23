@@ -76,7 +76,7 @@ public class principal extends AppCompatActivity {
                     break;
             }
 
-            res.setText("" + Math.round(resultado));
+            res.setText("" + String.format("%.2f", resultado));
         }
     }
 
