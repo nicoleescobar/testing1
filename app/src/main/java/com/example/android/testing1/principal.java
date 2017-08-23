@@ -84,6 +84,7 @@ public class principal extends AppCompatActivity {
         res.setText("");
         n1.setText("");
         n2.setText("");
+        operaciones.setSelection(0);
 
         n1.requestFocus();
     }
