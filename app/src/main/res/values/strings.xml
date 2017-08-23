@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">testing1</string>
-    <string name="titulo">TÍTULO</string>
+    <string name="titulo">Operaciones</string>
     <string name="resultado">Resultado</string>
     <string name="primer_numero">Primer Numero</string>
     <string name="segundo_numero">Segundo Numero</string>
@@ -8,4 +8,15 @@
     <string name="borrar">Borrar</string>
     <string name="mensaje_error_uno">Digite El Numero Uno</string>
     <string name="mensaje_error_dos">Digite El Numero Dos</string>
+    <string name="opciones">Operaciones</string>
+    <string name="suma">Suma</string>
+    <string name="resta">Resta</string>
+    <string name="mult">Multiplicación</string>
+    <string name="div">División</string>
+    <string-array name="operaciones">
+        <item>@string/suma</item>
+        <item>@string/resta</item>
+        <item>@string/mult</item>
+        <item>@string/div</item>
+    </string-array>
 </resources>

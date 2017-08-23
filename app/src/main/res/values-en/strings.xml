@@ -2,11 +2,16 @@
 <resources>
     <string name="app_name">testing1</string>
     <string name="borrar">clear</string>
-    <string name="calcular">calculate</string>
-    <string name="primer_numero">first number</string>
-    <string name="resultado">result</string>
-    <string name="segundo_numero">second number</string>
-    <string name="titulo">title</string>
+    <string name="calcular">Calculate</string>
+    <string name="primer_numero">First number</string>
+    <string name="resultado">Result</string>
+    <string name="segundo_numero">Second number</string>
+    <string name="titulo">Operations</string>
     <string name="mensaje_error_uno">Type Number one</string>
     <string name="mensaje_error_dos">Type Number Two</string>
+    <string name="opciones">Operations</string>
+    <string name="div">Division</string>
+    <string name="suma">Add</string>
+    <string name="resta">Substract</string>
+    <string name="mult">Multiplication</string>
 </resources>
