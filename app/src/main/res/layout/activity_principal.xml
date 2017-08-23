@@ -28,19 +28,19 @@
             android:id="@+id/txtnum1"
             android:layout_width="345dp"
             android:layout_height="wrap_content"
+            android:layout_weight="0.09"
             android:ems="10"
             android:hint="@string/primer_numero"
-            android:inputType="number"
-            android:layout_weight="0.09" />
+            android:inputType="number|numberDecimal" />
 
         <EditText
             android:id="@+id/txtnum2"
             android:layout_width="345dp"
             android:layout_height="wrap_content"
+            android:layout_weight="0.16"
             android:ems="10"
             android:hint="@string/segundo_numero"
-            android:inputType="number"
-            android:layout_weight="0.16" />
+            android:inputType="number|numberDecimal" />
 
         <TextView
             android:id="@+id/textView3"

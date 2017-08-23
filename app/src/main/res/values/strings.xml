@@ -19,4 +19,5 @@
         <item>@string/mult</item>
         <item>@string/div</item>
     </string-array>
+    <string name="mensaje_error_3">Operacion Invalida</string>
 </resources>

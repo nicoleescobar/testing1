@@ -14,4 +14,5 @@
     <string name="suma">Add</string>
     <string name="resta">Substract</string>
     <string name="mult">Multiplication</string>
+    <string name="mensaje_error_3">Invalid Operation</string>
 </resources>

@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class principal extends AppCompatActivity {
     private TextView res;
@@ -32,6 +33,7 @@ public class principal extends AppCompatActivity {
     }
 
     public boolean validar(){
+        int posicion = operaciones.getSelectedItemPosition();
         if(n1.getText().toString().isEmpty()){
             n1.setError(resources.getString(R.string.mensaje_error_uno));
             return false;
@@ -42,18 +44,39 @@ public class principal extends AppCompatActivity {
             return false;
         }
 
+        if((Integer.parseInt(n2.getText().toString()) == 0 ) && (posicion == 3)){
+            Toast.makeText(this, resources.getString(R.string.mensaje_error_3), Toast.LENGTH_SHORT).show();
+            return false;
+        }
+
         return true;
     }
 
     public void calcular(View v){
-        int num1, num2, resultado;
-
+        double num1, num2, resultado=0;
+        int opcion;
+        res.setText("");
         if (validar()) {
-            num1 = Integer.parseInt(n1.getText().toString());
-            num2 = Integer.parseInt(n2.getText().toString());
-            resultado = num1 + num2;
+            opcion = operaciones.getSelectedItemPosition();
+            num1 = Double.parseDouble(n1.getText().toString());
+            num2 = Double.parseDouble(n2.getText().toString());
 
-            res.setText("" + resultado);
+            switch (opcion) {
+                case 0 :
+                    resultado = num1 + num2;
+                    break;
+                case 1 :
+                    resultado = num1 - num2;
+                    break;
+                case 2 :
+                    resultado = num1 * num2;
+                    break;
+                case 3 :
+                    resultado = num1 / num2;
+                    break;
+            }
+
+            res.setText("" + Math.round(resultado));
         }
     }
 
